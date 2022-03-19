@@ -1,0 +1,82 @@
+/* WEB230 Final Project - Hangman Game */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1.5em auto 300px 6rem 2rem;
+    align-content: flex-start;
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Helvetica, Arial, sans-serif;
+    background: url("../Javascript/assets/Animated Shape (2).svg") center no-repeat lightskyblue;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#letters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1.5em 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    padding: 0 260px;
+}
+
+#letters div {
+    margin: 0 10px 10px 15px;
+    padding-top: 0.5em;
+    border: 1px solid gray;
+    color: darkgreen;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 0.3;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#letters div:hover {
+    background-color: palegreen;
+}
+
+img {
+    margin-top: 40px;
+}
+
+#clue p {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 0.5em;
+    font-family: 'Comic Sans MS', sans-serif;
+    color: white;
+}
+
+/* 
+This class will grey out the letters as they are used. 
+Just add the class "used".
+*/
+#letters div.used {
+    background-color: snow;
+    opacity: 0.5;
+}
+
+section#image {
+    text-align: center;
+}
